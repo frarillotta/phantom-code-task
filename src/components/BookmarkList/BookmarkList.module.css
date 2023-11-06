@@ -1,0 +1,58 @@
+
+
+.boomkarkListWrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.bookmarkList {
+    display: flex;
+    gap: 12px;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex-direction: column;
+    padding: 0;
+    padding: 12px 0px;
+    /* hide scrollbar */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.bookmarkList::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.paginationWrapper {
+    padding: 4px 0px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+
+.paginationNumber {
+    padding: 3px;
+    width: 33px;
+    height: 32px;
+    border-radius: 100%;
+    /* width: 24px; */
+    /* display: block; */
+    display: flex;
+    text-align: center;
+    place-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.paginationNumberCircle {
+    position: absolute;
+    width: 33px;
+    height: 32px;
+    border: 1px solid;
+    border-radius: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
