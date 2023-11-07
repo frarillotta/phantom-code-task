@@ -79,6 +79,12 @@ export const Bookmark: React.FC<BookmarkProps> = ({ id, lastEdited, name, url })
     const { removeBookmark, editBookmark } = useBookmarksStore();
     const { removeBookmarksMetadata } = useBookmarksMetadataStore();
     return <motion.li
+        layout
+        transition={{
+            layout: {
+                duration: 0.25
+            }
+        }}
         variants={bookmarkVariants}
         className={styles.bookmarkWrapper}
     >
